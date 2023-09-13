@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find my collection</title>
+  </head>
+
+  <body>
+    <header>
+      <span title="The name of the collection"><h3>Guilty Pleasures</h3></span>
+    </header>
+
+    <section class="explainations">
+      <div class="container">
+        <h1>Girls Game</h1>
+        <ul>
+          <li>
+            Find the <b>four correct outfits </b> from one of my collection and
+            get a reward !
+          </li>
+          <li>
+            Just <b>press the arrows </b> to skip to the next or previous
+            pieces.
+          </li>
+          <li>
+            Once an outfit is correct, the silhouette will be <b>blackened</b>.
+          </li>
+          <li>Some pieces <b>don't have a matching </b> top/bottom.</li>
+          <li>Scroll down to discover the models.</li>
+        </ul>
+
+        <h2>Will you be able to find every matches?</h2>
+
+        <button id="Btn" onclick="window.location.href='#Game'"></button>
+      </div>
+    </section>
+
+    <section class="Game" id="Game">
+      <div class="content">
+        <div class="figure">
+          <img
+            id="model1"
+            img
+            src="https://dl.dropbox.com/s/d9n17vi3fnwcgae/Illustration.png?dl=0"
+          />
+
+          <div class="sliderUp">
+            <button
+              class="Prev"
+              button
+              onclick="Prev1(),displayedsil1(),win()"
+            ></button>
+            <img
+              id="Slider1"
+              src="https://dl.dropbox.com/s/xs1naqvfg37vw8i/Rien.png?dl=0"
+            />
+            <button
+              class="Next"
+              button
+              onclick="Next1(),displayedsil1(),win()"
+            ></button>
+          </div>
+
+          <div class="sliderDown">
+            <button
+              class="prev"
+              button
+              onclick="prev1(),displayedsil1(),win()"
+            ></button>
+            <img
+              id="slider1"
+              src="https://dl.dropbox.com/s/xs1naqvfg37vw8i/Rien.png?dl=0"
+            />
+            <button
+              class="next"
+              button
+              onclick="next1(),displayedsil1(),win()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="figure">
+          <img
+            id="model2"
+            img
+            src="https://dl.dropbox.com/s/d9n17vi3fnwcgae/Illustration.png?dl=0"
+          />
+
+          <div class="sliderUp">
+            <button
+              class="Prev"
+              button
+              onclick="Prev2(), displayedsil2(),win()"
+            ></button>
+            <img
+              id="Slider2"
+              src="https://dl.dropbox.com/s/xs1naqvfg37vw8i/Rien.png?dl=0"
+            />
+            <button
+              class="Next"
+              button
+              onclick="Next2(), displayedsil2(),win()"
+            ></button>
+          </div>
+
+          <div class="sliderDown">
+            <button
+              class="prev"
+              button
+              onclick="prev2(), displayedsil2(),win()"
+            ></button>
+            <img
+              id="slider2"
+              src="https://dl.dropbox.com/s/xs1naqvfg37vw8i/Rien.png?dl=0"
+            />
+            <button
+              class="next"
+              button
+              onclick="next2(), displayedsil2(),win()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="figure">
+          <img
+            id="model3"
+            img
+            src="https://dl.dropbox.com/s/d9n17vi3fnwcgae/Illustration.png?dl=0"
+          />
+
+          <div class="sliderUp">
+            <button
+              class="Prev"
+              button
+              onclick="Prev3(), displayedsil3(),win()"
+            ></button>
+            <img
+              id="Slider3"
+              src="https://dl.dropbox.com/s/xs1naqvfg37vw8i/Rien.png?dl=0"
+            />
+            <button
+              class="Next"
+              button
+              onclick="Next3(), displayedsil3(),win()"
+            ></button>
+          </div>
+
+          <div class="sliderDown">
+            <button
+              class="prev"
+              button
+              onclick="prev3(), displayedsil3(),win()"
+            ></button>
+            <img
+              id="slider3"
+              src="https://dl.dropbox.com/s/xs1naqvfg37vw8i/Rien.png?dl=0"
+            />
+            <button
+              class="next"
+              button
+              onclick="next3(), displayedsil3(),win()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="figure">
+          <img
+            id="model4"
+            img
+            src="https://dl.dropbox.com/s/d9n17vi3fnwcgae/Illustration.png?dl=0"
+          />
+
+          <div class="sliderUp">
+            <button
+              class="Prev"
+              button
+              onclick="Prev4(),displayedsil4(),win()"
+            ></button>
+            <img
+              id="Slider4"
+              class="haut4"
+              src="https://dl.dropbox.com/s/xs1naqvfg37vw8i/Rien.png?dl=0"
+            />
+            <button
+              class="Next"
+              button
+              onclick="Next4(),displayedsil4(),win()"
+            ></button>
+          </div>
+
+          <div class="sliderDown">
+            <button
+              class="prev"
+              button
+              onclick="prev4(),displayedsil4(),win()"
+            ></button>
+            <img
+              id="slider4"
+              src="https://dl.dropbox.com/s/xs1naqvfg37vw8i/Rien.png?dl=0"
+            />
+            <button
+              class="next"
+              button
+              onclick="next4(),displayedsil4(),win()"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Reward">
+      <div id="reward">
+        <p>
+          Thanks for playing ! This is a picture of my collection, in real life.
+        </p>
+        <img
+          id="shoot"
+          src="https://dl.dropbox.com/s/vpf1kebfwwntus5/Shooting.jpg?dl=0"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <h4>Drawings <br /><br />Code<br /><br />Louise Vassart</h4>
+    </footer>
+  </body>
+</html>
